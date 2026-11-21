@@ -1,0 +1,9 @@
+setting,model,auc,bal_acc,recall,specificity,brier,ece
+cross-site,LogReg,0.758,0.663,0.739,0.587,0.261,0.273
+cross-site,NeuralNet,0.641,0.594,0.732,0.457,0.349,0.352
+cross-site,RandomForest,0.772,0.642,0.747,0.538,0.234,0.26
+cross-site,SVM,0.715,0.619,0.787,0.452,0.267,0.281
+pooled,LogReg,0.883,0.801,0.837,0.764,0.134,0.07
+pooled,NeuralNet,0.817,0.772,0.804,0.74,0.2,0.201
+pooled,RandomForest,0.875,0.801,0.851,0.752,0.139,0.075
+pooled,SVM,0.886,0.818,0.882,0.754,0.13,0.059
