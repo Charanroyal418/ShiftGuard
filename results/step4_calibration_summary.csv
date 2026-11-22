@@ -1,0 +1,7 @@
+model,calib,auc,brier,ece
+LogReg,isotonic,0.779,0.253,0.261
+LogReg,raw,0.758,0.261,0.273
+LogReg,sigmoid,0.781,0.253,0.275
+RandomForest,isotonic,0.77,0.255,0.275
+RandomForest,raw,0.772,0.234,0.26
+RandomForest,sigmoid,0.734,0.264,0.295
