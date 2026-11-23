@@ -17,7 +17,7 @@ def make_preprocessor():
     ])
     categorical_pipe = Pipeline([
         ("impute", SimpleImputer(strategy="most_frequent", keep_empty_features=True)),
-        ("onehot", OneHotEncoder(handle_unknown="ignore")),
+        ("onehot", OneHotEncoder(handle_unknown="ignore", sparse_output=False)),
     ])
     return ColumnTransformer([
         ("num", numeric_pipe, NUMERIC),
