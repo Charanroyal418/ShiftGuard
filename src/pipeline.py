@@ -6,9 +6,11 @@ from sklearn.linear_model import LogisticRegression
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.svm import SVC
 from sklearn.neural_network import MLPClassifier
+
 NUMERIC = ["age", "trestbps", "chol", "thalach", "oldpeak", "ca"]
 CATEGORICAL = ["sex", "cp", "fbs", "restecg", "exang", "slope", "thal"]
 FEATURES = NUMERIC + CATEGORICAL
+
 
 def make_preprocessor():
     numeric_pipe = Pipeline([
@@ -24,16 +26,20 @@ def make_preprocessor():
         ("cat", categorical_pipe, CATEGORICAL),
     ])
 
+
 def make_logreg(seed=42):
     return Pipeline([
         ("prep", make_preprocessor()),
         ("model", LogisticRegression(max_iter=1000, random_state=seed)),
     ])
+
+
 def make_rf(seed=42):
     return Pipeline([
         ("prep", make_preprocessor()),
         ("model", RandomForestClassifier(n_estimators=300, random_state=seed)),
     ])
+
 
 def make_svm(seed=42):
     return Pipeline([
@@ -41,12 +47,14 @@ def make_svm(seed=42):
         ("model", SVC(kernel="rbf", probability=True, random_state=seed)),
     ])
 
+
 def make_mlp(seed=42):
     return Pipeline([
         ("prep", make_preprocessor()),
         ("model", MLPClassifier(hidden_layer_sizes=(16, 8), max_iter=2000,
                                 random_state=seed)),
     ])
+
 
 MODELS = {
     "LogReg": make_logreg,
