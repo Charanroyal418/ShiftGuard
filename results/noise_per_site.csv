@@ -1,0 +1,13 @@
+mode,site,auc,ci_low,ci_high
+uniform,cleveland,0.821,0.771,0.866
+uniform,hungarian,0.864,0.816,0.906
+uniform,switzerland,0.78,0.604,0.941
+uniform,va,0.727,0.639,0.804
+mi,cleveland,0.82,0.77,0.867
+mi,hungarian,0.85,0.8,0.894
+mi,switzerland,0.761,0.567,0.941
+mi,va,0.723,0.639,0.802
+rf,cleveland,0.823,0.775,0.869
+rf,hungarian,0.856,0.808,0.899
+rf,switzerland,0.798,0.635,0.948
+rf,va,0.719,0.628,0.8

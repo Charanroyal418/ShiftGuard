@@ -1,0 +1,11 @@
+sites,weights,auc,ci_low,ci_high,diff_vs_uniform,diff_ci_low,diff_ci_high
+all 4 sites,uniform,0.798,0.752,0.84,0.0,0.0,0.0
+all 4 sites,mi,0.786,0.733,0.833,-0.012,-0.028,0.005
+all 4 sites,rf,0.798,0.752,0.839,0.0,-0.014,0.015
+all 4 sites,llm,0.795,0.748,0.838,-0.003,-0.008,0.003
+all 4 sites,llm_soft,0.797,0.75,0.84,-0.001,-0.004,0.002
+without switzerland,uniform,0.804,0.767,0.839,0.0,0.0,0.0
+without switzerland,mi,0.796,0.76,0.831,-0.008,-0.024,0.011
+without switzerland,rf,0.799,0.764,0.834,-0.004,-0.02,0.011
+without switzerland,llm,0.796,0.758,0.832,-0.008,-0.012,-0.003
+without switzerland,llm_soft,0.801,0.763,0.837,-0.003,-0.006,-0.001
